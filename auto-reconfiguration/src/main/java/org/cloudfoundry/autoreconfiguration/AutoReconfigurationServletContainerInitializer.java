@@ -17,7 +17,7 @@ public final class AutoReconfigurationServletContainerInitializer implements Ser
     public void onStartup(Set<Class<?>> c, ServletContext ctx) throws ServletException {
         this.logger.info(">>>>> Servlet Context Initialization");
 
-        ctx.setInitParameter(ContextLoader.CONTEXT_INITIALIZER_CLASSES_PARAM,
+        ctx.setInitParameter(ContextLoader.GLOBAL_INITIALIZER_CLASSES_PARAM,
                 AutoReconfigurationApplicationContextInitializer.class.getCanonicalName());
     }
 

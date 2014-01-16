@@ -1,7 +1,8 @@
-target/
+*.iml
 .classpath
+.idea
 .project
 .settings/
 .springBeans
 manifest.yml
-
+target/
